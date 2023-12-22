@@ -62,14 +62,39 @@
     flex:1;
     height: 100%;
     width: 50%;
+    margin-top: 100px;
 }
 #slidingDiv{
-    height: 100px;
-    width: 100px;
+    height: 80vh;
+    width: 50vw;
     background-color: #D8C3A5;
-    transition:0.3s;
+    margin-top: 10vh;
+    /*translate: -50vw;*/
+    transition-duration: .5s;
 
 }
-#slidingDiv :hover{
-    transform: translate(0, 10px);
+#slidingDiv{
+    background-color: #D8C3A5;
+}
+#resumeTab{
+    background-color: #D8C3A5;
+    height: 200px;
+    width: 55px;
+    float:right;
+    translate: 45px -50%;
+    margin-top: 50%;
+    align-content: center;
+    border-radius: 11px;
+}
+#resumeTab h1{
+    rotate: 90deg;
+    margin-top: 65px;
+    color: #074006;
+}
+
+
+#slidingDiv:hover{
+    /*transform: translateX(45vw);*/
+    transition-duration: .75s;
+
 }
