@@ -1,24 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+/*header*/
 #header{
     background-size: auto;
-    width:100%;
-    height: 10%;
-    background-color: bisque;
-    position: sticky
+    width:100vw;
+    height: 10vh;
+    background-color: #EAE7DC;
+    position: fixed;
+    display:flex;
+    flex-direction: row;
+    border-bottom: solid 1px #D8C3A5;
+}
+#header img{
+
 }
 #header nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    height: 100%;
+    width: 90%;
+}
+#header nav ul{
 }
 #header nav ul li{
     list-style: none;
-
-    text-decoration: none;
     display: inline-block;
-    background-color: blue;
 }
 #header nav ul li a{
-    color:black;
+    color: #D8C3A5;
     text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    padding:20px;
+    transition-duration: .5s;
 
+}
+#header nav ul li :hover{
+    color: #074006;
+    transition-duration: .5s ;
+}
+
+
+
+/*Front Page*/
+
+#landing{
+    background-color: #EAE7DC;
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#landing .splitDiv{
+    flex:1;
+    height: 100%;
+    width: 50%;
+}
+#slidingDiv{
+    height: 100px;
+    width: 100px;
+    background-color: #D8C3A5;
+    transition:0.3s;
+
+}
+#slidingDiv :hover{
+    transform: translate(0, 10px);
 }
