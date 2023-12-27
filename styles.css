@@ -12,13 +12,13 @@
     color: #a0845d;
     font-family: 'Courier New', Courier, monospace;
 }
-.centeredDiv{
-    height: fit-content;
-    width: fit-content;
-    position:relative;
-    
-}
+.label{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: -50% -50%;
 
+}
 /*header*/
 #header{
     background-size: auto;
@@ -80,6 +80,7 @@
     height: 100%;
     width: 50%;
     margin-top: 100px;
+    position: relative;
 }
 
 /*Sliding Div with Resume*/
@@ -133,9 +134,14 @@
 
 /*Landing Page*/
 .splitDiv .greenText{
-    font-size:40pt;
+    font-size:55pt;
 }
-.splitDiv .brownText{
+.splitDiv .brownText ul li{
     font-size: 20pt;
+    list-style: none;
+}
+#headshot{
+    border-bottom: solid #074006 5px;
+    width: 100%;
 }
 
