@@ -68,7 +68,6 @@
 
 #landing{
     background-color: #EAE7DC;
-    background-size: cover;
     height:100vh;
     display: flex;
     flex-direction: row;
@@ -161,9 +160,10 @@
     font: 400;
 }
 .scrollingContainer{
-    border: #f00 5px solid;
+    background-color: #D8C3A5;
+    border: #074006 5px solid;
     height: 50%;
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     overflow-x:scroll;
@@ -177,7 +177,7 @@
     scroll-behavior:auto;
 }
 .scrollingContent{
-    height: 60%;
+    height: 80%;
     aspect-ratio: 1/1;
     margin: auto 10%;
     border: #f00 solid 2px;
@@ -187,7 +187,14 @@
     scroll-snap-stop:always;
 }
 
-.scrollingContent:hover{
-
+#projectPage{
+    background-color: #a0845d;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+}
+#projectPage i{
+    color: #074006;
 }
 

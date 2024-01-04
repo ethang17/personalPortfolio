@@ -8,7 +8,7 @@ let clones =[];
 let disableScroll=false;
 let scrollPos;
 
-let arrowBtns = [...document.querySelectorAll('.scrollScreen h2')]
+let arrowBtns = [...document.querySelectorAll('#projectPage i')]
 
 let items = [...document.querySelectorAll(".scrollingContent")];
 items.forEach(item =>{
