@@ -74,6 +74,7 @@
     height: 100%;
     width: 50%;
     margin-top: 100px;
+    position: relative;
 }
 
 /*Sliding Div with Resume*/
@@ -127,9 +128,9 @@
 
 /*Landing Page*/
 .splitDiv .greenText{
-    font-size:40pt;
+    font-size:55pt;
 }
-.splitDiv .brownText{
+.splitDiv .brownText ul li{
     font-size: 20pt;
 }
 
