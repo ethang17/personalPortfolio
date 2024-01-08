@@ -166,7 +166,7 @@
     width: 80%;
     display: flex;
     flex-direction: row;
-    overflow-x:scroll;
+    overflow-x:hidden;
     overflow-y: hidden;
     align-content: center;
     justify-content: left;
@@ -179,12 +179,18 @@
 .scrollingContent{
     height: 80%;
     aspect-ratio: 1/1;
-    margin: auto 10%;
-    border: #f00 solid 2px;
-    background-color: blue;
+    padding: 0 5%;
+    margin: auto 0;
     transition: .3s;
     scroll-snap-align: center;
     scroll-snap-stop:always;
+    display: flex;
+}
+.scrollContentInside{
+    flex:1;
+    border: red solid 2px;
+    background-color: blue;
+    padding:2%;
 }
 
 #projectPage{

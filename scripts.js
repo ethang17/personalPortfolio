@@ -38,17 +38,21 @@ container.scrollLeft=2* firstItem.offsetWidth
 arrowBtns.forEach(btn =>{
     btn.addEventListener("click", ()=>{
         if(btn.id == "left"){
-            if(container.scrollLeft<= 2*firstItem.offsetWidth){
+            if(container.scrollLeft <= firstItem.offsetWidth){
+                console.log("LEFTTTTT")
                 container.classList.add("no-transition");
-                container.scrollLeft += 10*firstItem.offsetWidth
+                container.scrollLeft += (items.length *firstItem.offsetWidth);
                 container.classList.remove("no-transition");
             }
             container.scrollLeft -= firstItem.offsetWidth
+
+            
+            
             
         }else if(btn.id == "right"){
-            if(container.scrollLeft>= 8*firstItem.offsetWidth){
+            if(container.scrollLeft>= items.length*firstItem.offsetWidth){
                 container.classList.add("no-transition");
-                container.scrollLeft -= 9*firstItem.offsetWidth
+                container.scrollLeft -= items.length*firstItem.offsetWidth
                 container.classList.remove("no-transition");
             }
             container.scrollLeft += firstItem.offsetWidth
