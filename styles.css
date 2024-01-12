@@ -186,6 +186,12 @@
     scroll-snap-stop:always;
     display: flex;
 }
+.scrollingContent a{
+    flex: 1;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
 .scrollContentInside{
     flex:1;
     border: red solid 2px;
@@ -204,3 +210,14 @@
     color: #074006;
 }
 
+/* Me-Lody Page */
+
+#meLodyTile a .scrollContentInside{
+    background-image: url("melodyLogo.jpg") ;
+    background-position: center;
+    background-size: cover;
+}
+#meLodyTile a .scrollContentInside h1{
+    color: white;
+    
+}
