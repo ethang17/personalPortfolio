@@ -97,7 +97,7 @@
     align-content: center;
     border-radius: 11;
     position: fixed;
-    left:100%;
+    left:99%;
     top:50%;
     transform: translateY(-50%);
 }
@@ -112,7 +112,7 @@
     top:50%;
     left:50%;
     position: absolute;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
     transition: 0.5s;
 
 }
@@ -208,9 +208,19 @@
 /* Me-Lody Page */
 
 #meLodyTile a .scrollContentInside{
-    background: url("melodyLogo.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("melodyLogo.jpg");
     background-position: center;
     background-size: 200%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+#meLodyTile a:hover .scrollContentInside{
+    background-image: linear-gradient(rgba(255, 255, 255, .5),rgba(255, 255, 255, .5) ), url("melodyLogo.jpg");
+    transform: scale(125%);
+    transition-duration: 500ms;
 }
 #meLodyTile a .scrollContentInside h1{
     color: #444444;
