@@ -190,7 +190,6 @@
 }
 .scrollContentInside{
     flex:1;
-    border: red solid 2px;
     background-color: blue;
     padding:2%;
 }
@@ -209,11 +208,12 @@
 /* Me-Lody Page */
 
 #meLodyTile a .scrollContentInside{
-    background-image: url("melodyLogo.jpg") ;
+    background: url("melodyLogo.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 200%;
 }
 #meLodyTile a .scrollContentInside h1{
-    color: white;
+    color: #444444;
+    font: 600;
     
 }
