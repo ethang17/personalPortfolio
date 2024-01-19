@@ -188,11 +188,7 @@
     text-decoration: none;
     color: black;
 }
-.scrollContentInside{
-    flex:1;
-    background-color: blue;
-    padding:2%;
-}
+
 
 #projectPage{
     background-color: #a0845d;
@@ -207,23 +203,51 @@
 
 /* Me-Lody Page */
 
-#meLodyTile a .scrollContentInside{
-    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("melodyLogo.jpg");
+.scrollContentInside{
     background-position: center;
-    background-size: 200%;
     text-align: center;
     flex-direction: column;
     justify-content: center;
-    
-
+    transition-duration: 500ms;
+    flex:1;
+    background-color: blue;
+    border: #074006 5px solid;
+    padding:2%;
+}
+#meLodyTile a .scrollContentInside{
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("melodyLogo.jpg");
+    background-size: 200%;
 }
 #meLodyTile a:hover .scrollContentInside{
-    background-image: linear-gradient(rgba(255, 255, 255, .5),rgba(255, 255, 255, .5) ), url("melodyLogo.jpg");
-    transform: scale(125%);
+    background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("melodyLogo.jpg");
+}
+#desktopTile a .scrollContentInside{
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("desktopLogo.jpeg");
+
+}
+#desktopTile a:hover .scrollContentInside{
+    background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("desktopLogo.jpeg");
+}
+#wordleTile a .scrollContentInside{
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("wordleLogo.jpeg");
+
+}
+#wordleTile a:hover .scrollContentInside{
+    background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("wordleLogo.jpeg");
+}
+a:hover .scrollContentInside{
+    transform: scale(110%);
     transition-duration: 500ms;
 }
-#meLodyTile a .scrollContentInside h1{
-    color: #444444;
-    font: 600;
-    
+.scrollContentInside h1{
+    color: rgba(7, 64, 6, 0);
+    font-family: 'Impact';
+    font-weight: lighter;
+    font-size: 75px;
+    margin-top:50%;
+    transform: translateY(-50%);
+}
+a:hover .scrollContentInside h1{
+    color: rgba(7, 64, 6, 1);
+
 }
