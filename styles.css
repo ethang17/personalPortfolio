@@ -107,7 +107,7 @@
     color: #074006;
 }
 #resumeImage{
-    height:80%;
+    max-width: 50%;
     width: calc(height*8.5/11);
     top:50%;
     left:50%;
@@ -118,7 +118,7 @@
 }
 #resumeImage:hover{
     transition: 0.5s;
-    height:85%;
+    max-width: 60%;
     width: calc(height*8.5/11);
 }
 #slidingDiv:hover{
@@ -156,9 +156,9 @@
     font: 400;
 }
 .scrollingContainer{
-    background-color: #D8C3A5;
+    background-color: #EAE7DC;
     border: #074006 5px solid;
-    height: 50%;
+    height: 70%;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -193,9 +193,21 @@
 #projectPage{
     background-color: #a0845d;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+#projectTitle{
+    color:#EAE7DC;
+    font-size: 75px;
+    margin-top: 10%;
+}
+#scrollInterface{
     justify-content:center;
     align-items: center;
     display: flex;
+    height: 90%;
 }
 #projectPage i{
     color: #074006;
@@ -211,7 +223,7 @@
     transition-duration: 500ms;
     flex:1;
     background-color: blue;
-    border: #074006 5px solid;
+    border: #a0845d 5px solid;
     padding:2%;
 }
 #meLodyTile a .scrollContentInside{
@@ -220,16 +232,18 @@
 }
 #meLodyTile a:hover .scrollContentInside{
     background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("melodyLogo.jpg");
+
 }
 #desktopTile a .scrollContentInside{
     background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("desktopLogo.jpeg");
-
+    background-size: 100%;
 }
 #desktopTile a:hover .scrollContentInside{
     background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("desktopLogo.jpeg");
 }
 #wordleTile a .scrollContentInside{
     background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("wordleLogo.jpeg");
+    background-size: 100%;
 
 }
 #wordleTile a:hover .scrollContentInside{
