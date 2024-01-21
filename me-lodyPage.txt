@@ -1,0 +1,10 @@
+About:
+Me-lody was a project creaeted during my first year of university in my Computer Informatics class. 
+The idea of the app was to be abel to share what music you are listening to in the moment. 
+At a random time during the day, you would get a notification to either, if you are currently listening to music, you can share what song you are currently listening to. 
+If you are not listening to music, you can share the alst song you listened to. 
+The idea came about in the later months of 2022. A similar app called Airbuds rose to popularity in the months follwoing, showing strength of idea.
+
+How was it made:
+The app was written primarily in Typescript. Using Expo Go, we were able to create a template app that we cold the build off of.
+Myself, along with three other students of the class worked together in order to create this version of an app. 
