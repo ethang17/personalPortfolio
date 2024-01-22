@@ -265,3 +265,18 @@ a:hover .scrollContentInside h1{
     color: rgba(7, 64, 6, 1);
 
 }
+
+/*Contact Page*/
+#contactPage{
+    background-color: #EAE7DC;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+#contactTitle{
+    color:#a0845d;
+    font-size: 75px;
+    margin-top: 10%;
+}

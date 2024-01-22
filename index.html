@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Ethan Grim's Portfolio</title>
@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#landing">TOP</a></li>
                 <li><a href="#projectPage">PROJECTS</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#contactPage">CONTACT</a></li>
             </ul>
         </nav>
     </section>
@@ -47,43 +47,64 @@
     </section>
     <section id="projectPage">
         <h1 id="projectTitle">PROJECTS</h1>
-        <div id = "scrollInterface">
-        <i class="fa-solid fa-caret-left fa-7x" id="left"></i>
-        <div class="scrollingContainer">
-            <div class="scrollingContent" id="meLodyTile">
-                <a href="">
-                    <div class="scrollContentInside">
-                        <h1 class="projectTitle">Me-Lody</h1>
-                        <h2 class="projectDescrition"></h2>
-                    </div>
-                </a>
-            </div>
-            <div class="scrollingContent" id="desktopTile">
-                <a href="">
-                    <div class="scrollContentInside">
-                        <h1 class="projectTitle">Desktop Cleaner</h1>
-                        <h2 class="projectDescrition"></h2>
-                    </div>
-                </a>
-            </div>
+        <div id="scrollInterface">
+            <i class="fa-solid fa-caret-left fa-7x" id="left"></i>
+            <div class="scrollingContainer">
+                <div class="scrollingContent" id="meLodyTile">
+                    <a href="">
+                        <div class="scrollContentInside">
+                            <h1 class="projectTitle">Me-Lody</h1>
+                            <h2 class="projectDescrition"></h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="scrollingContent" id="desktopTile">
+                    <a href="">
+                        <div class="scrollContentInside">
+                            <h1 class="projectTitle">Desktop Cleaner</h1>
+                            <h2 class="projectDescrition"></h2>
+                        </div>
+                    </a>
+                </div>
 
 
-            <div class="scrollingContent" id="wordleTile">
-                <a>
-                    <div class="scrollContentInside">
-                        <h1 class="projectTitle">Wordle Remake</h1>
-                        <h2 class="projectDescrition"></h2>
-                    </div>
-                </a>
+                <div class="scrollingContent" id="wordleTile">
+                    <a>
+                        <div class="scrollContentInside">
+                            <h1 class="projectTitle">Wordle Remake</h1>
+                            <h2 class="projectDescrition"></h2>
+                        </div>
+                    </a>
+                </div>
+
             </div>
-            
+            <i class="fa-solid fa-caret-right fa-7x" id="right"></i>
         </div>
-        <i class="fa-solid fa-caret-right fa-7x" id="right"></i>
-    </div>
+    </section>
+    <section id="contactPage">
+        <h1 id="contactTitle">CONTACT ME</h1>
+        <form>
+            <label>NAME<input type="text" id="formName"></label>
+
+            <label>EMAIL<input type="email" id="formEmail"></label>
+
+            <label>SUBJECT<input type="text" id="formSubject"></label>
+
+            <label>MESSAGE<input type="text" id="formMessage"></label>
+
+            <button onclick="sendMail()">SUBMIT</button>
+        </form>
     </section>
 
 
 </body>
 <script src="scripts.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("3et3r2T6dF16Thofb");
+    })();
+</script>
 
 </html>
