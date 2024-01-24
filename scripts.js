@@ -66,6 +66,7 @@ function goToResume() {
 }
 
 function sendMail() {
+    console.log("TRY SEND")
     const date = new Date();
     const day = date.getDate();
     const month = date.getMonth();
@@ -81,6 +82,7 @@ function sendMail() {
 
     const serviceID = "service_sit058e";
     const templateID = "template_3wys8cn";
+
     emailjs.send(serviceID, templateID, params)
         .then(
             res => {
@@ -88,13 +90,12 @@ function sendMail() {
                 document.getElementById("formEmail").value = "";
                 document.getElementById("formSubject").value = "";
                 document.getElementById("formMessage").value = "";
-                console.log(res);
-                alert("Your message has been sent successfully.");
             }
 
         )
         .catch(error => {
             console.log(error)
         })
+        alert("Your message has been sent successfully.");
 
 }
