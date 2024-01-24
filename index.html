@@ -84,14 +84,18 @@
     <section id="contactPage">
         <h1 id="contactTitle">CONTACT ME</h1>
         <form id="contactForm">
-            <label>NAME<input type="text" id="formName"></label>
+            <label class="greenText">NAME</label>
+            <input type="text" id="formName">
 
-            <label>EMAIL<input type="email" id="formEmail"></label>
+            <label class="greenText">EMAIL</label>
+            <input type="email" id="formEmail">
 
-            <label>SUBJECT<input type="text" id="formSubject"></label>
+            <label class="greenText">SUBJECT</label>
+            <input type="text" id="formSubject">
 
-            <label>MESSAGE<input type="text" id="formMessage"></label>
-
+            <label class="greenText">MESSAGE</label>
+            <input type="text" id="formMessage" class="brownText">
+            <br>
             <button onclick="sendMail()" id="contactSubmit">SUBMIT</button>
         </form>
     </section>
