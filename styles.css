@@ -107,18 +107,19 @@
     color: #074006;
 }
 #resumeImage{
-    max-width: 50%;
+    max-width: 45%;
     width: calc(height*8.5/11);
     top:50%;
     left:50%;
     position: absolute;
     transform: translate(-50%, -50%);
     transition: 0.5s;
+    border: #a0845d solid 5px;
 
 }
 #resumeImage:hover{
     transition: 0.5s;
-    max-width: 60%;
+    max-width: 50%;
     width: calc(height*8.5/11);
 }
 #slidingDiv:hover{
@@ -201,7 +202,7 @@
 #projectTitle{
     color:#EAE7DC;
     font-size: 75px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 #scrollInterface{
     justify-content:center;
@@ -284,7 +285,7 @@ a:hover .scrollContentInside h1{
 #contactForm{
     border: #a0845d solid 5px;
     width: 50%;
-    height: 65%;
+    height: fit-content;
     margin: 0 auto;
     justify-content: center;
 }
@@ -292,15 +293,28 @@ a:hover .scrollContentInside h1{
 #contactForm label{
     margin-top: 20px;
     display:block;
-    font-size: 200%;
+    font-size: xx-large;
 }
 #contactForm input{
     height: 10%;
     width:80%;
     border: #a0845d solid 2px;
     text-align: center;
-    font-size: 200%;
+    font-size: xx-large;
+}
+#contactForm textarea{
+    height: 10%;
+    width:80%;
+    border: #a0845d solid 2px;
+    text-align: center;
+    font-size: xx-large;
 }
 #contactSubmit{
-    margin-top: 5%;
+    margin: 5% auto;
+    padding: 0 5%;
+    border: #a0845d solid 2px;
+    background-color:#EAE7DC;
+    font-size: xx-large;
+    width: fit-content;
+    height: 50px;
 }
