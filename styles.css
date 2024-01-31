@@ -318,3 +318,43 @@ a:hover .scrollContentInside h1{
     width: fit-content;
     height: 50px;
 }
+
+@media (width<700px) {
+
+    #header nav ul{
+        flex-direction: column;
+        display:flex;
+    }
+    #landing{
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+
+    #landing .splitDiv{
+        flex:1;
+        height: 50%;
+        width: 100%;
+    }
+    
+    .label{
+
+        margin: auto 0;
+        text-align: center;
+        width: 80%;
+        
+
+    }
+    .splitDiv .greenText{
+        font-size: 40pt;
+        margin-bottom: 20px;
+        
+    }
+    #slidingDiv{
+        height: 50vh;
+        width: 80vw;
+        translate: -80vw;
+        top: -90%;
+    }
+
+}
