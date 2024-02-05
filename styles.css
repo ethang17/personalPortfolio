@@ -249,6 +249,7 @@
 }
 #wordleTile a:hover .scrollContentInside{
     background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("wordleLogo.jpeg");
+
 }
 a:hover .scrollContentInside{
     transform: scale(110%);
@@ -356,10 +357,15 @@ a:hover .scrollContentInside h1{
         translate: -80vw;
         top: -90%;
     }
+    #slidingDiv:hover{
+    transform: translateX(80vw);
+    transition-duration: .75s;
+
+}
 
     .scrollingContent{
         width: 80%;
-        aspect-ratio: 1/1;
+        height: calc(100vw *.8*.8);
 
     }
     #contactForm{
