@@ -357,4 +357,16 @@ a:hover .scrollContentInside h1{
         top: -90%;
     }
 
+    .scrollingContent{
+        width: 80%;
+        aspect-ratio: 1/1;
+
+    }
+    #contactForm{
+        border: #a0845d solid 5px;
+        width: 80%;
+        height: fit-content;
+
+        justify-content: space-between;
+    }
 }
