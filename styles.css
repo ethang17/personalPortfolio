@@ -368,11 +368,20 @@ a:hover .scrollContentInside h1{
         height: calc(100vw *.8*.8);
 
     }
+    #projectTitle{
+        position: relative;
+        top:7.5%;
+    }
+    #contactTitle{
+        position: relative;
+        top: 7.5%;
+    }
     #contactForm{
         border: #a0845d solid 5px;
         width: 80%;
         height: fit-content;
+        top: 20%;
+        position:relative;
 
-        justify-content: space-between;
     }
 }
