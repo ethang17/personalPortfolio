@@ -325,8 +325,8 @@ a:hover .scrollContentInside h1{
     width: 100vw;
     height: 100vh;
     background-color: #000;
-    padding-top: 1px;
     position: relative;
+    padding-top: 10vh;
 
 }
 .projectTitleDiv{
