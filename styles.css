@@ -3,13 +3,19 @@
     padding: 0;
 }
 
+#indexBody{
+    --mainColor: #a0845d;
+    --secondColor: #EAE7DC;
+    --highlightColor:#074006;
+}
+
 .greenText{
-    color:#074006;
+    color:var(--highlightColor);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:900;
 }
 .brownText{
-    color: #a0845d;
+    color: var(--mainColor);
     font-family: 'Courier New', Courier, monospace;
 }
 .label{
@@ -24,11 +30,11 @@
     background-size: auto;
     width:100vw;
     height: 10vh;
-    background-color: #EAE7DC;
+    background-color: var(--secondColor);
     position: fixed;
     display:flex;
     flex-direction: row;
-    border-bottom: solid 1px #a0845d;
+    border-bottom: solid 1px var(--mainColor);
     z-index: 2;
 }
 
@@ -45,7 +51,7 @@
     display: inline-block;
 }
 #header nav ul li a{
-    color: #a0845d;
+    color: var(--mainColor);
     text-decoration: none;
     font-size: 25px;
     font-weight: 600;
@@ -54,7 +60,7 @@
 
 }
 #header nav ul li :hover{
-    color: #074006;
+    color: var(--highlightColor);
     transition-duration: .5s ;
 }
 
@@ -63,7 +69,7 @@
 /*Front Page*/
 
 #landing{
-    background-color: #EAE7DC;
+    background-color: var(--secondColor);
     height:100vh;
     display: flex;
     flex-direction: row;
@@ -108,7 +114,7 @@
 }
 #resumeImage{
     max-width: 45%;
-    width: calc(height*8.5/11);
+
     top:50%;
     left:50%;
     position: absolute;
@@ -120,7 +126,6 @@
 #resumeImage:hover{
     transition: 0.5s;
     max-width: 50%;
-    width: calc(height*8.5/11);
 }
 #slidingDiv:hover{
     transform: translateX(45vw);
@@ -137,28 +142,19 @@
     list-style: none;
 }
 #headshot{
-    border-bottom: solid #074006 5px;
+    border-bottom: solid var(--highlightColor) 5px;
     width: 100%;
 }
 
 
-/*TESTING HORIZONTAL SCROLLING*/
-.scrollScreen{
-    background-color: green;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .scrollScreen h2{
     color:white;
     font: 400;
 }
 .scrollingContainer{
-    background-color: #EAE7DC;
-    border: #074006 5px solid;
+    background-color: var(--secondColor);
+    border: var(--highlightColor) 5px solid;
     height: 70%;
     width: 80%;
     display: flex;
@@ -211,7 +207,7 @@
     height: 90%;
 }
 #projectPage i{
-    color: #074006;
+    color: var(--highlightColor);
 }
 
 
@@ -223,7 +219,7 @@
     transition-duration: 500ms;
     flex:1;
     background-color: blue;
-    border: #a0845d 5px solid;
+    border: var(--mainColor) 5px solid;
     padding:2%;
 }
 #meLodyTile a .scrollContentInside{
@@ -278,13 +274,13 @@ a:hover .scrollContentInside h1{
     text-align: center;
 }
 #contactTitle{
-    color:#a0845d;
+    color:var(--mainColor);
     font-size: 75px;
     margin-top:7.5%;
     margin-bottom: 2%;
 }
 #contactForm{
-    border: #a0845d solid 5px;
+    border: var(--mainColor) solid 5px;
     width: 50%;
     height: fit-content;
     margin: 0 auto;
@@ -299,21 +295,21 @@ a:hover .scrollContentInside h1{
 #contactForm input{
     height: 10%;
     width:80%;
-    border: #a0845d solid 2px;
+    border: var(--mainColor) solid 2px;
     text-align: center;
     font-size: xx-large;
 }
 #contactForm textarea{
     height: 10%;
     width:80%;
-    border: #a0845d solid 2px;
+    border: var(--mainColor) solid 2px;
     text-align: center;
     font-size: xx-large;
 }
 #contactSubmit{
     margin: 5% auto;
     padding: 0 5%;
-    border: #a0845d solid 2px;
+    border: var(--mainColor) solid 2px;
     background-color:#EAE7DC;
     font-size: xx-large;
     width: fit-content;
@@ -331,22 +327,26 @@ a:hover .scrollContentInside h1{
 }
 .projectTitleDiv{
     width: 100vw;
-    height: 50vh;
-    background-color: red;
+    height: 30vh;
+    background-color: var(--mainColor);
+    position: relative;
 
 }
 .projectTitleText{
     font-family: monospace, monospace;
-    font:xx-large, "Courier New";
+    font: "Courier New";
+    font-size: 25vh;
     margin: 0 auto;
-    top: 50%;
-    height: 100px;
-    width: 100px;
-    border: #074006 5px solid;
-    color: white;
+    width: fit-content;
+    color: var(--secondColor);
 }
 
 /*ME-LODY PAGE*/
+#melodyBody{
+    --mainColor: #292862;
+    --secondColor: rgb(204, 197, 244 );
+    --highlightColor: white;
+}
 
 
 
