@@ -318,15 +318,15 @@ a:hover .scrollContentInside h1{
 /*Project Pages Template*/
 
 .projectOpener{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: #000;
+    background-color: #FFFFFF;
     position: relative;
     padding-top: 10vh;
 
 }
 .projectTitleDiv{
-    width: 100vw;
+    width: 100%;
     height: 30vh;
     background-color: var(--mainColor);
     position: relative;
@@ -339,6 +339,10 @@ a:hover .scrollContentInside h1{
     margin: 0 auto;
     width: fit-content;
     color: var(--secondColor);
+}
+.projectHorizontalSection{
+  display: flex;  
+  flex-direction: row;
 }
 
 /*ME-LODY PAGE*/
