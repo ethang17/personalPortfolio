@@ -1,44 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-#indexBody{
+#indexBody {
     --mainColor: #a0845d;
     --secondColor: #EAE7DC;
-    --highlightColor:#074006;
+    --highlightColor: #074006;
 }
 
-.greenText{
-    color:var(--highlightColor);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight:900;
+.greenText {
+    color: var(--highlightColor);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
 }
-.brownText{
+
+.brownText {
     color: var(--mainColor);
     font-family: 'Courier New', Courier, monospace;
 }
-.label{
+
+.label {
     position: absolute;
     top: 40%;
     left: 50%;
     translate: -50% -50%;
 
 }
+
 /*header*/
-#header{
+#header {
     background-size: auto;
-    width:100vw;
+    width: 100vw;
     height: 10vh;
     background-color: var(--secondColor);
     position: fixed;
-    display:flex;
+    display: flex;
     flex-direction: row;
     border-bottom: solid 1px var(--mainColor);
     z-index: 2;
 }
 
-#header nav{
+#header nav {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -46,38 +49,41 @@
     height: 100%;
     width: 90%;
 }
-#header nav ul li{
+
+#header nav ul li {
     list-style: none;
     display: inline-block;
 }
-#header nav ul li a{
+
+#header nav ul li a {
     color: var(--mainColor);
     text-decoration: none;
     font-size: 25px;
     font-weight: 600;
-    padding:20px;
+    padding: 20px;
     transition-duration: .5s;
 
 }
-#header nav ul li :hover{
+
+#header nav ul li :hover {
     color: var(--highlightColor);
-    transition-duration: .5s ;
+    transition-duration: .5s;
 }
 
 
 
 /*Front Page*/
 
-#landing{
+#landing {
     background-color: var(--secondColor);
-    height:100vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
 
 }
 
-#landing .splitDiv{
-    flex:1;
+#landing .splitDiv {
+    flex: 1;
     height: 100%;
     width: 50%;
     margin-top: 100px;
@@ -85,7 +91,7 @@
 }
 
 /*Sliding Div with Resume*/
-#slidingDiv{
+#slidingDiv {
     z-index: 1;
     height: 80vh;
     width: 50vw;
@@ -95,91 +101,102 @@
     position: absolute;
 
 }
-#resumeTab{
+
+#resumeTab {
     background-color: #D8C3A5;
     height: 200px;
     width: 55px;
-    float:right;
+    float: right;
     align-content: center;
     border-radius: 11;
     position: fixed;
-    left:99%;
-    top:50%;
+    left: 99%;
+    top: 50%;
     transform: translateY(-50%);
 }
-#resumeTab h1{
+
+#resumeTab h1 {
     rotate: 90deg;
     margin-top: 65px;
     color: #074006;
 }
-#resumeImage{
+
+#resumeImage {
     max-width: 45%;
 
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     transition: 0.5s;
     border: #a0845d solid 5px;
 
 }
-#resumeImage:hover{
+
+#resumeImage:hover {
     transition: 0.5s;
     max-width: 50%;
 }
-#slidingDiv:hover{
+
+#slidingDiv:hover {
     transform: translateX(45vw);
     transition-duration: .75s;
 
 }
 
 /*Landing Page*/
-.splitDiv .greenText{
-    font-size:55pt;
+.splitDiv .greenText {
+    font-size: 55pt;
 }
-.splitDiv .brownText ul li{
+
+.splitDiv .brownText ul li {
     font-size: 20pt;
     list-style: none;
 }
-#headshot{
+
+#headshot {
     border-bottom: solid var(--highlightColor) 5px;
     width: 100%;
 }
 
 
 
-.scrollScreen h2{
-    color:white;
+.scrollScreen h2 {
+    color: white;
     font: 400;
 }
-.scrollingContainer{
+
+.scrollingContainer {
     background-color: var(--secondColor);
     border: var(--highlightColor) 5px solid;
     height: 70%;
     width: 80%;
     display: flex;
     flex-direction: row;
-    overflow-x:hidden;
+    overflow-x: hidden;
     overflow-y: hidden;
     align-content: center;
     justify-content: left;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
 }
-.scrollingContainer.no-transition{
-    scroll-behavior:auto;
+
+.scrollingContainer.no-transition {
+    scroll-behavior: auto;
 }
-.scrollingContent{
+
+.scrollingContent {
     height: 80%;
     aspect-ratio: 1/1;
     padding: 0 5%;
     margin: auto 0;
     transition: .3s;
     scroll-snap-align: center;
-    scroll-snap-stop:always;
+    scroll-snap-stop: always;
     display: flex;
 }
-.scrollingContent a{
+
+.scrollingContent a {
     flex: 1;
     display: flex;
     text-decoration: none;
@@ -187,7 +204,7 @@
 }
 
 
-#projectPage{
+#projectPage {
     background-color: #a0845d;
     height: 100vh;
     display: flex;
@@ -195,76 +212,88 @@
     align-content: center;
     text-align: center;
 }
-#projectTitle{
-    color:#EAE7DC;
+
+#projectTitle {
+    color: #EAE7DC;
     font-size: 75px;
     margin-top: 5%;
 }
-#scrollInterface{
-    justify-content:center;
+
+#scrollInterface {
+    justify-content: center;
     align-items: center;
     display: flex;
     height: 90%;
 }
-#projectPage i{
+
+#projectPage i {
     color: var(--highlightColor);
 }
 
 
-.scrollContentInside{
+.scrollContentInside {
     background-position: center;
     text-align: center;
     flex-direction: column;
     justify-content: center;
     transition-duration: 500ms;
-    flex:1;
+    flex: 1;
     background-color: blue;
     border: var(--mainColor) 5px solid;
-    padding:2%;
+    padding: 2%;
 }
-#meLodyTile a .scrollContentInside{
-    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("/pictures/melodyLogo.jpg");
+
+#meLodyTile a .scrollContentInside {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/pictures/melodyLogo.jpg");
     background-size: 200%;
 }
-#meLodyTile a:hover .scrollContentInside{
-    background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("/pictures/melodyLogo.jpg");
+
+#meLodyTile a:hover .scrollContentInside {
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("/pictures/melodyLogo.jpg");
 
 }
-#desktopTile a .scrollContentInside{
-    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("/pictures/desktopLogo.jpeg");
+
+#desktopTile a .scrollContentInside {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/pictures/desktopLogo.jpeg");
     background-size: 100%;
 }
-#desktopTile a:hover .scrollContentInside{
-    background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("/pictures/desktopLogo.jpeg");
+
+#desktopTile a:hover .scrollContentInside {
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("/pictures/desktopLogo.jpeg");
 }
-#wordleTile a .scrollContentInside{
-    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0) ), url("/pictures/wordleLogo.jpeg");
+
+#wordleTile a .scrollContentInside {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/pictures/wordleLogo.jpeg");
     background-size: 100%;
 
 }
-#wordleTile a:hover .scrollContentInside{
-    background-image: linear-gradient(rgba(255, 255, 255, .7),rgba(255, 255, 255, .7) ), url("/pictures/wordleLogo.jpeg");
+
+#wordleTile a:hover .scrollContentInside {
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("/pictures/wordleLogo.jpeg");
 
 }
-a:hover .scrollContentInside{
+
+a:hover .scrollContentInside {
     transform: scale(110%);
     transition-duration: 500ms;
 }
-.scrollContentInside h1{
+
+.scrollContentInside h1 {
     color: rgba(7, 64, 6, 0);
     font-family: 'Impact';
     font-weight: lighter;
     font-size: 75px;
-    margin-top:50%;
+    margin-top: 50%;
     transform: translateY(-50%);
 }
-a:hover .scrollContentInside h1{
+
+a:hover .scrollContentInside h1 {
     color: rgba(7, 64, 6, 1);
 
 }
 
 /*Contact Page*/
-#contactPage{
+#contactPage {
     background-color: #EAE7DC;
     min-height: fit-content;
     padding-bottom: 50px;
@@ -273,13 +302,15 @@ a:hover .scrollContentInside h1{
     align-content: center;
     text-align: center;
 }
-#contactTitle{
-    color:var(--mainColor);
+
+#contactTitle {
+    color: var(--mainColor);
     font-size: 75px;
-    margin-top:7.5%;
+    margin-top: 7.5%;
     margin-bottom: 2%;
 }
-#contactForm{
+
+#contactForm {
     border: var(--mainColor) solid 5px;
     width: 50%;
     height: fit-content;
@@ -287,37 +318,41 @@ a:hover .scrollContentInside h1{
     justify-content: center;
 }
 
-#contactForm label{
+#contactForm label {
     margin-top: 20px;
-    display:block;
+    display: block;
     font-size: xx-large;
 }
-#contactForm input{
+
+#contactForm input {
     height: 10%;
-    width:80%;
+    width: 80%;
     border: var(--mainColor) solid 2px;
     text-align: center;
     font-size: xx-large;
 }
-#contactForm textarea{
+
+#contactForm textarea {
     height: 10%;
-    width:80%;
+    width: 80%;
     border: var(--mainColor) solid 2px;
     text-align: center;
     font-size: xx-large;
 }
-#contactSubmit{
+
+#contactSubmit {
     margin: 5% auto;
     padding: 0 5%;
     border: var(--mainColor) solid 2px;
-    background-color:#EAE7DC;
+    background-color: #EAE7DC;
     font-size: xx-large;
     width: fit-content;
     height: 50px;
 }
+
 /*Project Pages Template*/
 
-.projectOpener{
+.projectOpener {
     width: 100%;
     height: 100vh;
     background-color: #FFFFFF;
@@ -325,14 +360,16 @@ a:hover .scrollContentInside h1{
     padding-top: 10vh;
 
 }
-.projectTitleDiv{
+
+.projectTitleDiv {
     width: 100%;
     height: 30vh;
     background-color: var(--mainColor);
     position: relative;
 
 }
-.projectTitleText{
+
+.projectTitleText {
     font-family: monospace, monospace;
     font: "Courier New";
     font-size: 25vh;
@@ -340,15 +377,40 @@ a:hover .scrollContentInside h1{
     width: fit-content;
     color: var(--secondColor);
 }
-.projectHorizontalSection{
-  display: flex;  
-  flex-direction: row;
+
+.projectHorizontalSection {
+    margin: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+
 }
 
+.projectVideo {
+    width: 40%;
+    aspect-ratio: 16/9;
+    border: var(--mainColor) 10px solid;
+}
+
+.projectSummary {
+    background-color: var(--mainColor);
+    border: var(--highlightColor) 10px solid;
+    width: 50%;
+}
+
+.sectionThird {
+    width: 30%;
+    background-color: var(--secondColor);
+    border: var(--mainColor) 10px solid;
+}
+
+
 /*ME-LODY PAGE*/
-#melodyBody{
+#melodyBody {
     --mainColor: #292862;
-    --secondColor: rgb(204, 197, 244 );
+    --secondColor: rgb(204, 197, 244);
     --highlightColor: white;
 }
 
@@ -356,67 +418,92 @@ a:hover .scrollContentInside h1{
 
 @media (width<700px) {
 
-    #header nav ul{
+    #header nav ul {
         flex-direction: column;
-        display:flex;
-    }
-    #landing{
         display: flex;
-        flex-direction: column-reverse;
-    
     }
 
-    #landing .splitDiv{
-        flex:1;
+    #landing {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    #landing .splitDiv {
+        flex: 1;
         height: 50%;
         width: 100%;
     }
-    
-    .label{
+
+    .label {
 
         margin: auto 0;
         text-align: center;
         width: 80%;
-        
+
 
     }
-    .splitDiv .greenText{
+
+    .splitDiv .greenText {
         font-size: 40pt;
         margin-bottom: 20px;
-        
+
     }
-    #slidingDiv{
+
+    #slidingDiv {
         height: 50vh;
         width: 80vw;
         translate: -80vw;
         top: -90%;
     }
-    #slidingDiv:hover{
-    transform: translateX(80vw);
-    transition-duration: .75s;
 
-}
+    #slidingDiv:hover {
+        transform: translateX(80vw);
+        transition-duration: .75s;
 
-    .scrollingContent{
+    }
+
+    .scrollingContent {
         width: 80%;
         height: calc(100vw *.8*.8);
-        
+    }
 
-    }
-    #projectTitle{
-        position: relative;
-        top:7.5%;
-    }
-    #contactTitle{
+    #projectTitle {
         position: relative;
         top: 7.5%;
     }
-    #contactForm{
+
+    #contactTitle {
+        position: relative;
+        top: 7.5%;
+    }
+
+    #contactForm {
         border: #a0845d solid 5px;
         width: 80%;
         height: fit-content;
         top: 20%;
-        position:relative;
+        position: relative;
 
+    }
+    .projectTitleText {
+        font-size: 25vw;
+        padding-top: 15%;
+    }
+    .projectHorizontalSection {
+            margin: 2.5% 0;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        
+    }
+    .projectVideo {
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    .projectSummary {
+        width: 100%;
+        
     }
 }
