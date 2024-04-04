@@ -398,12 +398,54 @@ a:hover .scrollContentInside h1 {
     background-color: var(--mainColor);
     border: var(--highlightColor) 10px solid;
     width: 50%;
+    
+}
+.projectSummaryHeading{
+    font-size: 2vw;
+    padding-left: 1vw;
+    color: var(--highlightColor);
+    padding-top: 1vw;
+
+}
+.projectSummary p{
+    font-size: .9vw;
+    padding: 0 1vw 1vw  1vw;
+    color: var(--highlightColor);
 }
 
 .sectionThird {
     width: 30%;
     background-color: var(--secondColor);
     border: var(--mainColor) 10px solid;
+    
+}
+
+.sectionThird h1{
+    font-size: 2.5vw;
+    padding:1vw;
+    color:  var(--mainColor);
+    
+}
+.sectionThird a{
+    text-decoration: none;
+    color: inherit;
+}
+.sectionThird ul{
+    list-style: inside;
+    font-size: 2vw;
+    padding: 0 1vw 1vw  1vw;
+    color:  var(--mainColor)
+}
+
+.projectGithubLink{
+    text-align: center;
+}
+.fa-github{
+    font-size: 20vw;
+    color: var(--mainColor);
+    margin-top: 5%;
+    
+
 }
 
 
