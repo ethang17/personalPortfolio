@@ -455,6 +455,12 @@ a:hover .scrollContentInside h1 {
     --secondColor: rgb(204, 197, 244);
     --highlightColor: white;
 }
+/*WordleRemake PAGE*/
+#wordleBody {
+    --mainColor: green;
+    --secondColor: white;
+    --highlightColor: black;
+}
 
 
 
