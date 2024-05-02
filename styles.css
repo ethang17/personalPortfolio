@@ -468,6 +468,11 @@ a:hover .scrollContentInside h1 {
     --secondColor: #63B06C;
     --highlightColor: #D1CB5E;
 }
+#desktopBody {
+    --mainColor: #444444;
+    --secondColor: #46b8db;
+    --highlightColor: white;
+}
 
 
 
