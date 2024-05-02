@@ -14,7 +14,7 @@
 
         <nav>
             <ul>
-                <li><a href="/index.html#landing">TOP</a></li>
+                <li><a href="/index.html#landing">HOME</a></li>
                 <li><a href="/index.html#projectPage">PROJECTS</a></li>
                 <li><a href="/index.html#contactPage">CONTACT</a></li>
             </ul>
@@ -25,15 +25,50 @@
             <h1 class='projectTitleText'>WORDLE</h1>
         </div>
         <div class="projectHorizontalSection">
-            <iframe class="projectVideo"></iframe>
+            <video class="projectVideo"
+            src="wordleDemo.mp4"
+            type="video/mp4"
+            controls
+        ></video>
             <div class="projectSummary">
+                <h1 class="projectSummaryHeading">Summary</h1>
+                <p>The "Wordle" remake was a personal project taken up by myself during my time on co-op. Utilizing time on my lunch break, I found enjoyment from 
+                    working on the logic of this "Wordle" remake. The largest difficulty came from the logic challenges associated with the evaluation of the user's answer.
+                    There are many combinations of conditions that needed to be addressed. Some of the most challenging being (x representing some letter):
+                </p>
+                <ul>
+                    <li>Multiple x's exist, only one x guessed</li>
+                    <li>One x exists, multiple x's guessed</li>
+                    <li>Multiple x's exist, one x guessed in position, one out of position</li>
+                    <li>Multiple x's exist, multiple x's guessed out of postion</li>
+                </ul>
+                <p>As you can see the biggest issues pertained to words that have multiple of the same letter. This posed a fun challenge that required more thinking than many
+                    standard in-class examples that are focused on basic programming principles. I also found the creation of multiple new aesthetic pieces to mend with the logic.
+                </p>
 
             </div>
         </div>
         <div class="projectHorizontalSection">
-            <div class="sectionThird projectLanguages"></div>
-            <div class="sectionThird projectTimeline"></div>
-            <div class="sectionThird projectGithubLink"></div>
+            <div class="sectionThird projectLanguages">
+                <h1>Creation</h1>
+                <ul>
+                    <li>Written in Python</li>
+                    <li>Pillow Module</li>
+                    <li>Tkinter Module</li>
+                    <li>VS Code IDE</li>
+                </ul>
+            </div>
+            <div class="sectionThird projectTimeline">
+                <h1>Started</h1>
+                <ul><li>November 5th, 2024</li></ul>
+                
+                <h1>Ended</h1>
+                <ul><li>December 17th, 2024</li></ul>
+
+            </div>
+            <div class="sectionThird projectGithubLink">
+                <a href="https://github.com/ethang17/Wordle/"><i class="fa fa-github"></i></a>
+            </div>
         </div>
     </section>
 </body>

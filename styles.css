@@ -412,6 +412,13 @@ a:hover .scrollContentInside h1 {
     padding: 0 1vw 1vw  1vw;
     color: var(--highlightColor);
 }
+.projectSummary ul{
+    list-style: inside;
+    font-size: 1vw;
+    padding: 0 1vw 1vw  1vw;
+    color:  var(--highlightColor)
+}
+
 
 .sectionThird {
     width: 30%;
@@ -457,9 +464,9 @@ a:hover .scrollContentInside h1 {
 }
 /*WordleRemake PAGE*/
 #wordleBody {
-    --mainColor: green;
-    --secondColor: white;
-    --highlightColor: black;
+    --mainColor: #555555;
+    --secondColor: #63B06C;
+    --highlightColor: #D1CB5E;
 }
 
 
