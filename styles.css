@@ -244,26 +244,26 @@
 }
 
 #meLodyTile a .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/pictures/melodyLogo.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("pictures/melodyLogo.jpg");
     background-size: 200%;
 }
 
 #meLodyTile a:hover .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("/pictures/melodyLogo.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("pictures/melodyLogo.jpg");
 
 }
 
 #desktopTile a .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/pictures/desktopLogo.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("pictures/desktopLogo.jpeg");
     background-size: 100%;
 }
 
 #desktopTile a:hover .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("/pictures/desktopLogo.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("pictures/desktopLogo.jpeg");
 }
 
 #wordleTile a .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("/pictures/wordleLogo.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("pictures/wordleLogo.jpeg");
     background-size: 100%;
 
 }
@@ -372,7 +372,7 @@ a:hover .scrollContentInside h1 {
 .projectTitleText {
     font-family: monospace, monospace;
     font: "Courier New";
-    font-size: 25vh;
+    font-size: 10vw;
     margin: 0 auto;
     width: fit-content;
     color: var(--secondColor);
@@ -467,6 +467,11 @@ a:hover .scrollContentInside h1 {
     --mainColor: #555555;
     --secondColor: #63B06C;
     --highlightColor: #D1CB5E;
+}
+#deskTopBody {
+    --mainColor: #999999;
+    --secondColor: black;
+    --highlightColor: white;
 }
 
 
