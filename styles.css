@@ -244,32 +244,32 @@
 }
 
 #meLodyTile a .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("pictures/melodyLogo.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("Pictures/melodyLogo.jpg");
     background-size: 200%;
 }
 
 #meLodyTile a:hover .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("pictures/melodyLogo.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("Pictures/melodyLogo.jpg");
 
 }
 
 #desktopTile a .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("pictures/desktopLogo.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("Pictures/desktopLogo.jpeg");
     background-size: 100%;
 }
 
 #desktopTile a:hover .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("pictures/desktopLogo.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("Pictures/desktopLogo.jpeg");
 }
 
 #wordleTile a .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("pictures/wordleLogo.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("Pictures/wordleLogo.jpeg");
     background-size: 100%;
 
 }
 
 #wordleTile a:hover .scrollContentInside {
-    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("/pictures/wordleLogo.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7)), url("Pictures/wordleLogo.jpeg");
 
 }
 
