@@ -62,7 +62,7 @@ arrowBtns.forEach(btn => {
 })
 
 function goToResume() {
-    window.open("/TEST.pdf");
+    window.open("GrimRoundA2024.pdf");
 }
 
 function sendMail() {
